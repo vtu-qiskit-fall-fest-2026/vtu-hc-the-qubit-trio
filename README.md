@@ -46,8 +46,8 @@
 
 | # | Name | GitHub Username | Role |
 | :-- | :--- | :--- | :--- |
-| 1 | _Add your name_ | _your-github-username_ | _Team Lead_ |
-| 2 | _Add your name_ | _your-github-username_ | _Developer_ |
+| 1 | Sreenidi AV| sreenidiav| _Team Lead_ |
+| 2 | Naveen Kumar| _your-github-username_ | _Developer_ |
 | 3 | _Add your name_ | _your-github-username_ | _Developer_ |
 
 <!--
@@ -77,15 +77,12 @@ statement from the brief if one applies.
 ## 💡 Proposed Solution
 
 <!--
-Describe your solution. Keep it concrete: the core idea, the user flow, and
-the quantum/ML technique you are applying.
--->
-
-**Solution:** _In 2–3 sentences, describe what you built._
-
-**Key idea:** _The one-line technical summary of your approach._
-
-**Why this works:** _How your approach addresses the problem statement._
+Solution:
+We built a privacy-first heart monitoring pipeline that processes patient clinical metrics locally to extract a compact 6-feature vector. Instead of transmitting raw medical histories, the system passes this minimal payload to a 6-qubit Quantum Support Vector Classifier (QSVC) using a non-linear ZZFeatureMap for accurate heart disease classification.
+​Key Idea:
+A hybrid edge-quantum pipeline that compresses clinical features using ANOVA selection and maps them into an entangled quantum Hilbert space via Qiskit's FidelityQuantumKernel for accurate risk prediction.
+​Why This Works:
+Normalizing and selecting key clinical metrics locally drastically reduces data bandwidth and protects patient privacy. Encoding these features into entangled quantum states captures complex non-linear relationships across vital signs that traditional linear classical models struggle to resolve.
 
 ---
 
